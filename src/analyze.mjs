@@ -509,7 +509,7 @@ const visitors = {
       case '|=':
       case '^=':
       case '&=':
-        result.type = 'number';
+        if(result) result.type = 'number';
     }
     return result;
   },
